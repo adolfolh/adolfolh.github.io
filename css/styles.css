@@ -11,6 +11,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+span {
+  border-bottom: 2px solid #9A6CE5;
+  padding-bottom: 6px;
+}
+
 #section07 a {
   padding-top: 80px;
 }
@@ -443,6 +448,8 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
 }
 
 .lead {
