@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-span {
+.col-lg-8 span{
   border-bottom: 2px solid #9A6CE5;
   padding-bottom: 6px;
 }
