@@ -3,13 +3,36 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
+   $(document).ready(function(){
+    // HIDE LOADING SPINNER WHEN PAGE IS LOADED [7000msec after the page is loaded]
+    $(window).on('load', function () {
+        setTimeout(function () {
+            $('.loader').hide(300);
+        }, 7000);
+    });
+    $(window).on('load', function () {
+        var loadingCounter = setInterval(function () {
+            var count = parseInt($('.countdown').html());
+            if (count !== 0) {
+                $('.countdown').html(count - 1);
+            } else {
+                clearInterval();
+            }
+        }, 1000);
+    });
+    $('#reload').on('click', function (e) {
+        e.preventDefault();
+        location.reload();
+    });
+});
+
    $(function() {
     $('a[href*=#]').on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
   });
-  
+
     (function ($) {
     "use strict"; // Start of use strict
 
@@ -36,7 +59,7 @@
             }
         }
     });
-
+    
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
