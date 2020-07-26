@@ -8,7 +8,7 @@
     $(window).on('load', function () {
         setTimeout(function () {
             $('.loader').hide(300);
-        }, 7000);
+        }, 3000);
     });
     $(window).on('load', function () {
         var loadingCounter = setInterval(function () {
