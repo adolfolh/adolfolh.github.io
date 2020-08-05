@@ -3,28 +3,21 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
-   $(document).ready(function(){
-    // HIDE LOADING SPINNER WHEN PAGE IS LOADED [7000msec after the page is loaded]
-    $(window).on('load', function () {
-        setTimeout(function () {
-            $('.loader').hide(300);
-        }, 3000);
-    });
-    $(window).on('load', function () {
-        var loadingCounter = setInterval(function () {
-            var count = parseInt($('.countdown').html());
-            if (count !== 0) {
-                $('.countdown').html(count - 1);
-            } else {
-                clearInterval();
-            }
-        }, 1000);
-    });
-    $('#reload').on('click', function (e) {
-        e.preventDefault();
-        location.reload();
-    });
-});
+   $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+    var next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+  
+    for (var i=0;i<4;i++) {
+      next=next.next();
+      if (!next.length) {
+        next=$(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+    }
+  });
 
    $(function() {
     $('a[href*=#]').on('click', function(e) {

@@ -514,7 +514,7 @@ mark,
 }
 
 .list-inline {
-  padding-left: 0;
+  padding-left: 3rem;
   list-style: none;
 }
 
@@ -5907,6 +5907,11 @@ a.close.disabled {
 
 .carousel.pointer-event {
   touch-action: pan-y;
+}
+
+.carousel-nav-icon {
+  height: 48px;
+  width: 48px;
 }
 
 .carousel-inner {
