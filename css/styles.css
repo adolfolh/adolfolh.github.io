@@ -92,12 +92,42 @@ i {
   z-index: 99;
   font-family: "Playfair Display", sans-serif;
   position: absolute;
-  bottom: 0;
-  right: 13rem;
-  font-size: 80px;
+  bottom: 60px;
+  right: 2rem;
+  font-size: 34px;
   font-weight: 700;
   color: #fff;
+  margin-left: auto;
 }
+
+@media (min-width:600px) {
+  .container2 .card h2 {
+    font-size: 40px;
+    bottom: 10px;
+    right: 13rem;
+
+  }
+}
+
+@media (min-width:800px) {
+  .container2 .card h2 {
+    font-size: 60px;
+    bottom: 10px;
+    right: 13rem;
+
+  }
+}
+
+@media (min-width:1000px) {
+  .container2 .card h2 {
+    /* Never get larger than this */
+    font-size: 80px;
+    bottom: 0;
+    right: 13rem;
+
+  }
+}
+
 .container2 .card .fa-arrow-right {
   z-index: 100;
   opacity: 0;
