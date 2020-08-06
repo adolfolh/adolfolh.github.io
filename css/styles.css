@@ -93,28 +93,26 @@ i {
   font-family: "Playfair Display", sans-serif;
   position: absolute;
   bottom: 60px;
-  right: 2rem;
+  right: 4rem;
   font-size: 34px;
   font-weight: 700;
   color: #fff;
-  margin-left: auto;
+  margin-left: 55px;
 }
 
 @media (min-width:600px) {
   .container2 .card h2 {
     font-size: 40px;
     bottom: 10px;
-    right: 13rem;
-
+    right: 14rem;
   }
 }
 
 @media (min-width:800px) {
   .container2 .card h2 {
     font-size: 60px;
-    bottom: 10px;
-    right: 13rem;
-
+    bottom: 20px;
+    right: 17rem;
   }
 }
 
@@ -176,7 +174,7 @@ i {
   opacity: 1;
   color: #fff;
   position: absolute;
-  right: 8rem;
+  right: 9rem;
   bottom: 20px;
   font-size: 50px;
   cursor: pointer;
