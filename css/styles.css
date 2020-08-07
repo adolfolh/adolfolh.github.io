@@ -326,6 +326,20 @@ i {
   left: 0;
 }
 
+.dot {
+  background-color: #9A6CE5;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  opacity: 60%;
+}
+
+@media (max-width: 1000px) {
+  .dot {
+    display: none;
+  }
+}
+
 /**/
 
  .line-height2 {
