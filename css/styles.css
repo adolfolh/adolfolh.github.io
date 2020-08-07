@@ -5768,6 +5768,10 @@ a.close.disabled {
   transform: scale(1.02);
 }
 
+.modal-h2 {
+  font-size: larger;
+}
+
 .modal-dialog-scrollable {
   display: flex;
   max-height: calc(100% - 1rem);
@@ -10539,6 +10543,13 @@ header.masthead .masthead-heading {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 800px) {
+  #portfolio .portfolio-item {
+    padding: 1rem
+  }
+}
+
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
@@ -10588,9 +10599,23 @@ header.masthead .masthead-heading {
   text-align: left;
 }
 .portfolio-modal .modal-content h2 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 3rem; 
 }
+
+@media (min-width:800px) {
+  .portfolio-modal .modal-content h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:1000px) {
+  .portfolio-modal .modal-content h2 {
+    /* Never get larger than this */
+    font-size: 3rem;
+  }
+}
+
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
   text-align: center;
