@@ -29,8 +29,34 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}/* HR */
+h5 {
+  overflow: hidden;
+  text-align: center;
 }
 
+h5:before,
+h5:after {
+  background-color: #c0a3ee;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  border-radius: 10px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h5:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h5:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+/************/
 .glow {
   font-size: 80px;
   color: #fff;
@@ -782,7 +808,9 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 2rem;
 }
 
 h6, .h6 {
