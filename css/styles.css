@@ -31,7 +31,8 @@
   font-display: swap;
 }
 
-/* buttons */
+/*download*/
+
 
 #c
 {
@@ -50,7 +51,6 @@
     height: 42px;
     transform: translateY(-50%);
     transition: 0.3s ease width;
-    mix-blend-mode: hard-light;
     cursor: pointer;
     margin-top: 4rem;
     margin-bottom: 0;
@@ -174,7 +174,7 @@
         top: 18px;
         right: 17px;
         width: 10px;
-        transform: rotateZ(-45deg);
+        transform: rotateZ(45deg);
         background-color: #311440;
     }
     100%
@@ -193,7 +193,7 @@
         top: 18px;
         right: 11px;
         width: 10px;
-        transform: rotateZ(45deg);
+        transform: rotateZ(-45deg);
         background-color: #311440;
     }
     100%
@@ -272,24 +272,54 @@ h5:after {
   font-size: 80px;
   color: #fff;
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
+  -webkit-animation: glow 20s ease-in-out infinite alternate;
+  -moz-animation: glow 20s ease-in-out infinite alternate;
+  animation: glow 21s ease-in-out infinite alternate;
   mix-blend-mode: hard-light;
 }
 
 @-webkit-keyframes glow {
-  from {
+
+  0% {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9A6CE5, 0 0 40px #9A6CE5, 0 0 50px #9A6CE5, 0 0 60px #9A6CE5, 0 0 70px #9A6CE5;
   }
   
-  to {
+  10% {
     text-shadow: 0 0 20px #fff, 0 0 30px #c0a3ee, 0 0 40px #c0a3ee, 0 0 50px #c0a3ee, 0 0 60px #c0a3ee, 0 0 70px #c0a3ee, 0 0 80px #c0a3ee;
   }
 
-  to {
-    text-shadow: 0 0 0px #fff, 0 0 0px #c0a3ee, 0 0 0px #c0a3ee, 0 0 0px #c0a3ee, 0 0 0px #c0a3ee, 0 0 0px #c0a3ee, 0 0 80px #c0a3ee;
+  15% {
+    text-shadow: 0 0 3px #fff;
   }
+
+  20% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9A6CE5, 0 0 40px #9A6CE5, 0 0 50px #9A6CE5, 0 0 60px #9A6CE5, 0 0 70px #9A6CE5;
+  }
+  
+  30% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #c0a3ee, 0 0 40px #c0a3ee, 0 0 50px #c0a3ee, 0 0 60px #c0a3ee, 0 0 70px #c0a3ee, 0 0 80px #c0a3ee;
+  }
+
+  40% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9A6CE5, 0 0 40px #9A6CE5, 0 0 50px #9A6CE5, 0 0 60px #9A6CE5, 0 0 70px #9A6CE5;
+  }
+
+  50% {
+    text-shadow: none;
+  }
+
+  55% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9A6CE5, 0 0 40px #9A6CE5, 0 0 50px #9A6CE5, 0 0 60px #9A6CE5, 0 0 70px #9A6CE5;
+  }
+
+  60% {
+    text-shadow: none;
+  }
+
+  100% {
+    text-shadow: none;
+  }
+
 }
 
 i {
@@ -1017,7 +1047,7 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.5rem;
   font-style: italic;  
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h5, .h5 {
@@ -10681,6 +10711,7 @@ p {
   font-style: italic;
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+  font-weight: lighter;
 }
 
 @media (min-width: 768px) {
