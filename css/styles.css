@@ -621,6 +621,7 @@ i {
   padding-bottom: 6px;
 }
 
+
 #section07 a {
   padding-top: 80px;
 }
@@ -10882,49 +10883,112 @@ header.masthead .masthead-heading {
   max-width: 25rem;
   margin-left: auto;
   margin-right: auto;
+  overflow:hidden;
+  position: relative;
 }
 
 @media screen and (max-width: 800px) {
+  header.masthead {
+    padding-top: 2rem;
+  }
+
   #portfolio .portfolio-item {
     padding: 1rem
   }
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#portfolio .portfolio-pic{
   position: relative;
+}
+
+.smallbutton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  width: 70px;
+  height: 70px;
+  background-color: #4e3774;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  outline: none;
+  opacity: 1;
+  transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;  
+  z-index: 5;
+}
+
+.info-icon {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  color: white;
+  font-size: 20pt;
+  -moz-transition: font-size .6s ease-in-out; /* Firefox 4 */
+  -webkit-transition: font-size .6s ease-in-out; /* Safari and Chrome */
+  -o-transition: font-size .6s ease-in-out; /* Opera */
+  transition: font-size .6s ease-in-out; 
+  z-index: 6;
+
+}
+
+.portfolio-pic:hover .smallbutton{
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  transform: scale(15);
+  z-index: inherit 4;
+}
+
+.portfolio-pic:hover .info-icon{
+  font-size: 40pt;
+  z-index: inherit 5;
+}
+
+#portfolio .portfolio-item {
   display: block;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#portfolio .portfolio-item .portfolio-hover {
   display: flex;
-  position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(154, 108, 229, 0.5);
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#portfolio .smallbutton .portfolio-pic:hover {
   font-size: 1.25rem;
-  color: white;
+  transform: scale(2);
 }
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
-  opacity: 1;
-}
+
 #portfolio .portfolio-item .portfolio-caption {
+  position: relative;
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
+  z-index: 100;
 }
+
+
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
+
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+}
+
+
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
   font-family: 'Source Sans Pro', Sans-Serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

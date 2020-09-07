@@ -19,7 +19,38 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+
     <body id="page-top">
+        
+        <!-- POP UP -->
+
+        <script type="text/javascript">
+            $ (window).ready (function () {
+            setTimeout (function () {
+                $ ('#modal-subscribe').modal ("show")
+            }, 3000)
+                })
+        </script>
+
+        <div class="modal fade" id="modal-subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <br>
+                        <h1 class="text-center text-uppercase">Beware!</h1>
+                        <br>
+                        <h6 class="text-muted mb-5 mx-5 purple-underline line-height2">This website is currently under development. Many things are simple placeholders or not accurate. If you want to contact me please go to the <span>Contact</span> section to send me an email or message me on my social media profiles, which can be found in the <span>About Me</span> section.</h6>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -71,25 +102,25 @@
 
                 <div class="container2">
                     <div class="card bg-white">
-                    <h2>Moon People</h2>
-                    <i class="fas fa-arrow-right"></i>
-                    <p>This project is about this and that so yeah.</p>
-                    <div class="pic"></div>
+                        <h2>Moon People</h2>
+                        <i class="fas fa-arrow-right"></i>
+                        <p>This project is about this and that so yeah.</p>
+                        <div class="pic"></div>
+                        
+                            <button onclick="window.location.href='https://youtube.com';">
+                            </button>
+                        </div>
+                        <br> 
+                        <br>
+                        <div class="card card2 bg-white">
+                        <h2>Magic Architecture</h2>
+                        <i class="fas fa-arrow-right"></i>
+                        <p>This is a placeholder for a big project.</p>
+                        <div class="pic"></div>
+        
                     
-                    <button onclick="window.location.href='https://youtube.com';">
-                    </button>
-                    </div>
-                    <br> 
-                    <br>
-                    <div class="card card2 bg-white">
-                    <h2>Magic Architecture</h2>
-                    <i class="fas fa-arrow-right"></i>
-                    <p>This is a placeholder for a big project.</p>
-                    <div class="pic"></div>
-    
-                  
-                    <button onclick="window.location.href='https://youtube.com';">
-                    </button>
+                        <button onclick="window.location.href='https://youtube.com';">
+                        </button>
                     </div>
                 </div>
                 
@@ -98,7 +129,7 @@
                 <br> 
                 <br>
                 <br> 
-                <h5><span>  &emsp; Full Portfolio: &emsp;  </span></h5>
+                <h6 class="text-center purple-underline" style="font-size: 24px"><span>More projects.</span></h6>
                 <br>
                 <br> 
                 <br>
@@ -124,13 +155,12 @@
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-12 col-md d-flex align-items-center justify-content-center">
-                                        <div class="portfolio-item ">
-                                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                                <div class="portfolio-hover">
-                                                    <div class="portfolio-hover-content"><i class="fas fa-search fa-3x"></i></div>
+                                        <div class="portfolio-item">
+                                                <div class="portfolio-pic">
+                                                    <button class="portfolio-link smallbutton" data-toggle="modal" href="#portfolioModal1"></button>
+                                                    <i class="info-icon fas fa-info-circle"></i>
+                                                    <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
                                                 </div>
-                                                <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
-                                            </a>
                                             <div class="portfolio-caption">
                                                 <div class="portfolio-caption-heading">Alien Invasion</div>
                                                 <div class="portfolio-caption-subheading text-muted">An alien invasion game in Python using Pygame.</div>
@@ -140,12 +170,11 @@
                                     
                                     <div class="col-12 col-md d-flex align-items-center justify-content-center">
                                         <div class="portfolio-item">
-                                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                                <div class="portfolio-hover">
-                                                    <div class="portfolio-hover-content"><i class="fas fa-search fa-3x"></i></div>
-                                                </div>
+                                            <div class="portfolio-pic">
+                                                <button class="portfolio-link smallbutton" data-toggle="modal" href="#portfolioModal2"></button>
+                                                <i class="info-icon fas fa-info-circle"></i>
                                                 <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
-                                            </a>
+                                            </div>
                                             <div class="portfolio-caption">
                                                 <div class="portfolio-caption-heading">Data Visualization</div>
                                                 <div class="portfolio-caption-subheading text-muted">An introduction to Data Visualization in Python.</div>
@@ -158,12 +187,11 @@
                                 <div class="row">
                                     <div class="col-12 col-md d-flex align-items-center justify-content-center">
                                         <div class="portfolio-item">
-                                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                                <div class="portfolio-hover">
-                                                    <div class="portfolio-hover-content"><i class="fas fa-search fa-3x"></i></div>
-                                                </div>
-                                                <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
-                                            </a>
+                                            <div class="portfolio-pic">
+                                                <button class="portfolio-link smallbutton" data-toggle="modal" href="#portfolioModal3"></button>
+                                                <i class="info-icon fas fa-info-circle"></i>
+                                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                                            </div>
                                             <div class="portfolio-caption">
                                                 <div class="portfolio-caption-heading">First Year Coursework</div>
                                                 <div class="portfolio-caption-subheading text-muted">University</div>
@@ -172,12 +200,11 @@
                                     </div>
                                     <div class="col-12 col-md d-flex align-items-center justify-content-center">
                                         <div class="portfolio-item">
-                                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                                <div class="portfolio-hover">
-                                                    <div class="portfolio-hover-content"><i class="fas fa-search fa-3x"></i></div>
-                                                </div>
-                                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
-                                            </a>
+                                            <div class="portfolio-pic">
+                                                <button class="portfolio-link smallbutton" data-toggle="modal" href="#portfolioModal4"></button>
+                                                <i class="info-icon fas fa-info-circle"></i>
+                                                <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
+                                            </div>
                                             <div class="portfolio-caption">
                                                 <div class="portfolio-caption-heading">Web Application</div>
                                                 <div class="portfolio-caption-subheading text-muted">Not started this yet but it's going to use DJango</div>
