@@ -31,8 +31,89 @@
   font-display: swap;
 }
 
-/*download*/
 
+.blob-wrapper {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  .blob {
+    visibility: hidden !important;
+  }
+  .blob--2 {
+    visibility: hidden !important;
+  }
+  .blob--5 {
+    visibility: hidden !important;
+  }
+}
+
+.blob {
+  position: absolute;
+  clip-path: inset(0 0 0 100%);
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+.blob svg {
+  display: block;
+  position: absolute;
+}
+
+.blob--2 {
+  width: 760px;
+  height: 350px;
+  top: 145em;
+  left: -250px;
+  transform: rotate(-57deg);
+  animation-duration: 1.3s;
+  animation-name: reveal-stroke-l2r;
+  animation-delay: 0.3s;
+  z-index: 2;
+}
+.blob--2 svg {
+  fill:  rgb(196, 175, 231);
+}
+
+
+.blob--5 {
+  width: 800px;
+  height: 500px;
+  top: 85em;
+  left:40vw;
+  transform: rotate(-43deg);
+  animation-duration: 0.9s;
+  animation-delay: 0.6s;
+  animation-name: reveal-stroke-r2l;
+  z-index: 1;
+}
+.blob--5 svg {
+  fill:  rgba(154, 108, 229, 1);
+}
+
+@keyframes reveal-stroke-l2r {
+  0% {
+    clip-path: inset(18% 5% 18% 100%);
+    opacity: 0.8;
+ }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+ }
+}
+@keyframes reveal-stroke-r2l {
+  0% {
+    clip-path: inset(18% 100% 18% 5%);
+    opacity: 0.8;
+ }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+ }
+}
+
+/*download*/
 
 #c
 {
@@ -10817,11 +10898,12 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
+
 header.masthead {
   padding-top: 5.5rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background: url("../assets/img/header-bg.jpg");
   filter: saturate(50%);
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10842,7 +10924,6 @@ header.masthead .masthead-subheading span {
   border-bottom: 2px solid #9A6CE5;
   padding-bottom: 6px;
 }
-
 header.masthead .masthead-heading {
   font-size: 4.25rem;
   line-height: 3.25rem;
@@ -10870,7 +10951,6 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-
 
 #portfolio .portfolio-item {
   max-width: 25rem;
