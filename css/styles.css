@@ -10862,7 +10862,7 @@ header.masthead {
   padding-top: 5.5rem;
   text-align: center;
   color: #fff;
-  background: url("../assets/img/header-bg.jpg");
+  background: url("../assets/img/header-bg.webp");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11321,7 +11321,7 @@ header.masthead .masthead-heading:hover {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../assets/img/map-image.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
