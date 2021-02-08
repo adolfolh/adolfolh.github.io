@@ -61,7 +61,7 @@
   backdrop-filter: hue-rotate(80deg);
 	-webkit-transform:scale(2) translateX(-25%) translateY(-25%);
 	transform:scale(2) translateX(-25%) translateY(-25%);
-	border:none
+  border:none
 }
 .cursor2{
 	border: 2px solid #fff;
@@ -10910,6 +10910,12 @@ header.masthead .masthead-heading:hover {
     line-height: 4.5rem;
     margin-top: 1rem;
     margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  header.masthead {
+    padding-top: 22rem;
   }
 }
 
